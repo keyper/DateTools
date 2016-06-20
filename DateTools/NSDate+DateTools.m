@@ -270,15 +270,7 @@ static NSCalendar *implicitCalendar = nil;
                 return DateToolsLocalizedStrings(@"A minute ago");
             }
         case SecondsAgo:
-            if (isShort) {
-                return [self logicLocalizedStringFromFormat:@"%%d%@s" withValue:value];
-            } else if (value >= 2) {
-                return [self logicLocalizedStringFromFormat:@"%%d %@seconds ago" withValue:value];
-            } else if (isNumericTime) {
-                return DateToolsLocalizedStrings(@"1 second ago");
-            } else {
-                return DateToolsLocalizedStrings(@"Just now");
-            }
+            return DateToolsLocalizedStrings(@"Just now");
     }
     return nil;
 }
