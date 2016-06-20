@@ -7,10 +7,9 @@ Pod::Spec.new do |s|
   s.description  = 'DateTools was written to streamline date and time handling in Objective-C.'
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author       = { "Matthew York" => "my3681@gmail.com" }
+  s.authors      = { "Matthew York" => "my3681@gmail.com" }
 
-  s.ios.platform = :ios, '7.0'
-  s.osx.platform = :iox, '10.7'
+  s.platforms = { :ios => "7.0", :osx => "10.7" }
   s.requires_arc = true
 
   s.source_files = 'DateTools'
